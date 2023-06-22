@@ -16,11 +16,11 @@ export function getColorSchema(baseColor: string, inverse: boolean) {
 
   const color: Color = Color(baseColor)
 
-  const backgroundColor: Color = inverse ? color.darken(constants.backgroundColor) : color.lighten(constants.backgroundColor)
-  const progressColor: Color = inverse ? color.darken(constants.progressColor) : color.lighten(constants.progressColor)
-  const backgroundStateColor: Color = inverse ? color.darken(constants.backgroundStateColor) : color.lighten(constants.backgroundStateColor)
-  const hoverColor: Color = inverse ? color.darken(constants.hoverColor) : color.lighten(constants.hoverColor)
-  const borderStateColor: Color = inverse ? color.darken(constants.borderStateColor) : color.lighten(constants.borderStateColor)
+  const backgroundColor: Color = inverse ? color.darken(constants.backgroundColor).desaturate(0.5) : color.lighten(constants.backgroundColor)
+  const progressColor: Color = inverse ? color.darken(constants.progressColor).desaturate(0.5) : color.lighten(constants.progressColor)
+  const backgroundStateColor: Color = inverse ? color.darken(constants.backgroundStateColor).desaturate(0.5) : color.lighten(constants.backgroundStateColor)
+  const hoverColor: Color = inverse ? color.darken(constants.hoverColor).desaturate(0.5) : color.lighten(constants.hoverColor)
+  const borderStateColor: Color = inverse ? color.darken(constants.borderStateColor).desaturate(0.5) : color.lighten(constants.borderStateColor)
 
   return {
     baseColor: color.hex(),
