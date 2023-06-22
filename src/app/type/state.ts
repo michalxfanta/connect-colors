@@ -42,14 +42,14 @@ export enum IStateSecondaryColor {
 }
 
 export enum IStateBaseColor {
-  UNKNOWN = '#a8b4c5',
-  OFFLINE = '#b7b7b7',
+  UNKNOWN = '#9daabd',
+  OFFLINE = '#adadad',
   // IDLE = '#fddc71', yellow
   IDLE = '#deea6e',
   READY = '#92c78c',
-  BUSY = '#dab094',
+  BUSY = '#d5a585',
   PRINTING = '#7da7d9',
-  PAUSED = '#caa2cb',
+  PAUSED = '#c396c4',
   STOPPED = '#f8795f',
   // FINISHED = '#5fe7f8', tyrkys
   FINISHED = '#a1ea70',
