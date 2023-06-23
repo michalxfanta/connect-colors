@@ -23,22 +23,22 @@ export default function Home() {
         <h2>Light mode</h2>
 
         {Object.keys(IStateBaseColor).map((key) => (
-          <>
-            <h3 key={key}>{key}</h3>
+          <div key={key}>
+            <h3>{key}</h3>
             <Colors baseColor={IStateBaseColor[key as keyof typeof IStateBaseColor]} invert={false} />
             <Row stateText={key} baseColor={IStateBaseColor[key as keyof typeof IStateBaseColor]} invert={false} />
-          </>
+          </div>
         ))}
       </div>
       <div className="flex-grow p-12 bg-[#1C1E21] dark">
         <h2>Dark mode</h2>
 
         {Object.keys(IStateBaseColor).map((key) => (
-          <>
-            <h3 key={key}>{key}</h3>
+          <div key={key}>
+            <h3>{key}</h3>
             <Colors baseColor={IStateBaseColor[key as keyof typeof IStateBaseColor]} invert={true} />
             <Row stateText={key} baseColor={IStateBaseColor[key as keyof typeof IStateBaseColor]} invert={true} />
-          </>
+          </div>
         ))}
       </div>
     </main>

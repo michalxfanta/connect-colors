@@ -39,14 +39,19 @@ const Progress = styled.div<{ $bgColor: string; $progressColor: string; $primary
   }
 `
 
-const icons = [mini, mk25, mk3, mk4, xl]
-
+const printers = [
+  { icon: mini, printer: 'Original Prusa MINI' },
+  { icon: mk25, printer: 'Original Prusa i3 MK2.5' },
+  { icon: mk3, printer: 'Original Prusa i3 MK3' },
+  { icon: mk4, printer: 'Original Prusa MK4' },
+  { icon: xl, printer: 'Original Prusa XL' },
+]
 
 export default function Row(props: Props) {
-
   const schema = getColorSchema(props.baseColor, props.invert)
-
-  const icon = icons[Math.floor(Math.random() * icons.length)] 
+  const index = Math.floor(Math.random() * printers.length)
+  const printer = printers[index].printer
+  const icon = printers[index].icon
 
   return (
     <Link href="#">
@@ -61,7 +66,7 @@ export default function Row(props: Props) {
           $primaryColor={schema.baseColor}
           $hoverColor={schema.hoverColor}
         >
-          <h3>Original Prusa MK4</h3>
+          <h3>{printer}</h3>
           <div className="flex flex-row gap-10">
             <LabelState invert={props.invert} backgroundColor={schema.backgroundStateColor} borderColor={schema.baseColor} stateText={props.stateText} />
             <div className="flex flex-row gap-10">
