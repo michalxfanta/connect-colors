@@ -10,6 +10,7 @@ export enum IConnectState {
   STOPPED = 'STOPPED',
   FINISHED = 'FINISHED',
   ERROR = 'ERROR',
+  ATTENTION = 'ATTENTION',
   SPARE1 = 'SPARE1',
   SPARE2 = 'SPARE2',
 }
