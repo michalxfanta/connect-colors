@@ -4,9 +4,9 @@ export function getColorSchemaConstants(inverse: boolean) {
   return {
     baseColor: 0,
     backgroundColor: inverse ? 0.85 : 0.45,
-    progressColor: inverse ? 0.8 : 0.35,
-    backgroundStateColor: inverse ? 0.7 : 0.25,
-    hoverColor: inverse ? 0.6 : 0.15,
+    progressColor: inverse ? 0.7 : 0.35,
+    backgroundStateColor: inverse ? 0.60 : 0.25,
+    hoverColor: inverse ? 0.5 : 0.15,
     borderStateColor: inverse ? 0 : 0,
   }
 }

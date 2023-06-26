@@ -1,6 +1,5 @@
 'use client'
 import styled from 'styled-components'
-import Color from 'color'
 import { IStateBaseColor } from './type/state'
 
 import { Colors } from './colors'
