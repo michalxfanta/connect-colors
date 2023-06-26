@@ -10,7 +10,8 @@ export enum IConnectState {
   STOPPED = 'STOPPED',
   FINISHED = 'FINISHED',
   ERROR = 'ERROR',
-  ATTENTION = 'ATTENTION',
+  SPARE1 = 'SPARE1',
+  SPARE2 = 'SPARE2',
 }
 
 export enum IStatePrimaryColor {
@@ -44,17 +45,17 @@ export enum IStateSecondaryColor {
 export enum IStateBaseColor {
   UNKNOWN = '#9daabd',
   OFFLINE = '#adadad',
-  // IDLE = '#fddc71', yellow
   IDLE = '#deea6e',
   READY = '#92c78c',
   BUSY = '#d5a585',
   PRINTING = '#7da7d9',
   PAUSED = '#c396c4',
   STOPPED = '#f8795f',
-  // FINISHED = '#5fe7f8', tyrkys
   FINISHED = '#a1ea70',
   ERROR = '#dd7b7d',
   ATTENTION = '#f59c66',
+  SPARE1 = '#fddc71',
+  SPARE2 = '#5fe7f8',
 }
 
 export type IStateProperties = {
