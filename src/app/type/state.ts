@@ -46,7 +46,7 @@ export enum IStateSecondaryColor {
 export enum IStateBaseColor {
   UNKNOWN = '#9daabd',
   OFFLINE = '#adadad',
-  IDLE = '#deea6e',
+  IDLE = '#fddc71',
   READY = '#92c78c',
   BUSY = '#d5a585',
   PRINTING = '#7da7d9',
@@ -55,7 +55,7 @@ export enum IStateBaseColor {
   FINISHED = '#a1ea70',
   ERROR = '#dd7b7d',
   ATTENTION = '#f59c66',
-  SPARE1 = '#fddc71',
+  SPARE1 = '#deea6e',
   SPARE2 = '#5fe7f8',
 }
 
