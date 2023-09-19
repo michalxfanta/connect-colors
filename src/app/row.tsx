@@ -28,14 +28,14 @@ const Bg = styled.div<{ $bgColor: string }>`
 
 const Progress = styled.div<{ $bgColor: string; $progressColor: string; $primaryColor: string; $hoverColor: string }>`
   padding: 10px 20px;
-  background: ${(props) => `linear-gradient(to right, ${props.$progressColor} 40%, ${props.$bgColor} 0%)`};
+  background: ${(props) => `linear-gradient(to right, ${props.$progressColor} 10%, ${props.$bgColor} 0%)`};
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-image-slice: 1;
-  border-image-source: ${(props) => `linear-gradient(to right, ${props.$primaryColor} 40%, ${props.$bgColor} 0%)`};
+  border-image-source: ${(props) => `linear-gradient(to right, ${props.$primaryColor} 10%, ${props.$bgColor} 0%)`};
 
   &:hover {
-    background: ${(props) => `linear-gradient(to right, ${props.$hoverColor} 40%, ${props.$bgColor} 0%)`};
+    background: ${(props) => `linear-gradient(to right, ${props.$hoverColor} 10%, ${props.$bgColor} 0%)`};
   }
 `
 
