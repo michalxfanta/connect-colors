@@ -55,8 +55,8 @@ export enum IStateBaseColor {
   FINISHED = '#a1ea70',
   ERROR = '#dd7b7d',
   ATTENTION = '#f59c66',
-  SPARE1 = '#deea6e',
-  SPARE2 = '#5fe7f8',
+  ALERT = '#deea6e',
+  REFILL = '#5fe7f8',
 }
 
 export type IStateProperties = {
